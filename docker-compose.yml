@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+
+  node-explorer:
+    image: prom/node-exporter
+    ports:
+      - "9100:9100"
+
+  prometheus:
+    build: .
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana-enterprise
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    volumes:
+      - ./provisioning:/etc/grafana/provisioning
