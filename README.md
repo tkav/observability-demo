@@ -4,7 +4,7 @@
 
 Observability testing with Prometheus and Grafana using docker containers.
 
-Creates a node.js app that publishes a metric which is polled by Prometheus, allowing it to be available in Grafana.
+Includes a node.js app that publishes a metric which is polled by Prometheus, allowing it to be available in Grafana.
 
 Grafana Datasources and Dashboards are auto-provisioned on creation.
 
