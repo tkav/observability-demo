@@ -6,6 +6,16 @@ services:
     ports:
       - "9100:9100"
 
+  observabilityapp:
+    image: observabilityapp
+    build:
+      context: node-app
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - "9101:9101"
+
   prometheus:
     build: .
     ports:
