@@ -1,13 +1,19 @@
 # Observability Demo
 
-![Node.js Dashboard Example](docs/images/nodejs-dashboard-example.png)
+![Architecture Diagram](docs/images/architectural-diagram.png)
+
+Observability testing with Prometheus and Grafana using docker containers.
+
+Creates a node.js app that publishes a metric which is polled by Prometheus, allowing it to be available in Grafana.
+
+Grafana Datasources and Dashboards are auto-provisioned on creation.
 
 ## Usage
 
 Clone this repo:
 ```
-git clone https://github.com/tkav/observability-demo
-cd observability-demo
+git clone https://github.com/tkav/observability-demo \
+&& cd observability-demo
 ```
 
 Run using docker-compose:
