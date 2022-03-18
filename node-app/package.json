@@ -1,0 +1,14 @@
+{
+  "name": "observability-app",
+  "version": "1.0.0",
+  "description": "Publish metrics for Prometheus scraping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Kavanagh (https://github.com/tkav)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
